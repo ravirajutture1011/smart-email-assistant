@@ -1,4 +1,3 @@
- 
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import dotenv from "dotenv";
@@ -51,16 +50,6 @@ app.get("/api/content", async (req, res) => {
   }
 });
 
-// const generatePrompt = async (content, tone) => {
-//   return `You are an intelligent email assistant. 
-// Reply to the following email with a ${tone} tone.
-
-// Email:
-// "${content}"
-
-// The reply should be well-structured, polite, and suitable for professional communication.
-// `;
-// };
 
 const generatePrompt = async (content, tone) => {
   return `You are an intelligent email assistant. 
